@@ -7,7 +7,7 @@ class PekerjaanController extends PekerjaanModel
         return $this->findAll();
     }
 
-    public function getPekerjaanById($id)
+    public function getPekerjaanBy()
     {
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
