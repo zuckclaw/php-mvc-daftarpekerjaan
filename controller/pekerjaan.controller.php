@@ -6,6 +6,14 @@ class PekerjaanController extends PekerjaanModel
     {
         return $this->findAll();
     }
+
+    public function getPekerjaanById($id)
+    {
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            return $this->findOne($id);
+        }
+    }
 }
 
 ?>
